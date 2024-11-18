@@ -1,11 +1,19 @@
 
-import './App.css';
+import './App.css'
+import Header from "./components/Header.js"
+import Section from "./components/Section.js"
+import MemeImage from "./components/MemeImage.js"
 
 function App() {
   return (
-    <div className="App">
-    </div>
-  );
+    <>
+      <Header />
+      <main className="main">
+        <Section />
+        <MemeImage />
+      </main>
+    </>
+  )
 }
 
-export default App;
+export default App
