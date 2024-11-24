@@ -1,10 +1,10 @@
-export default function MemeImage() {
+export default function MemeImage({formDataProp, memeImage}) {
+ 
     return (
         <div className="meme-img-container">
-            
-            <img className="meme-image" src="http://i.imgflip.com/1bij.jpg" />
-            <p className="meme-top-text">One does not simply</p>
-            <p className="meme-bottom-text">Walk into mordor</p>
+            <img className="meme-image" src={memeImage} />
+            <p className="meme-top-text">{formDataProp.topText}</p>
+            <p className="meme-bottom-text">{formDataProp.bottomText}</p>
         </div>
     )
 }
